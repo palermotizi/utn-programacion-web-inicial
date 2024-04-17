@@ -1,0 +1,14 @@
+CLI: comand line interface (ej GIT, Node, NPN) este va con comandos
+
+GUI:  graphic user interface (ej VSCode) este va con botones
+
+git init
+con git add . en la terminal se added el archcivo al repositor
+con git add clase-1/index.html se guarda solo ese archcivo
+le damos seguimiento al archivo con git sino no está afectado por git
+git commit -m 'clase 2 GIT' le damos versiones a los archivos
+git log te da info de autor fecha etc
+git branch -M main es para cambiar la config de master a main (lo usan todos, es importante cambiarlo)
+git remote add origin https://github.com/Palermotiziana/utn-programacion-web-inicial.git
+esto es dinde mando el codigo, si no me acuerdo donde lo deje, con el enlace de la apagina web llego al mismo lugar
+pero le agrego .GIT y me lleva
