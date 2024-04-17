@@ -11,4 +11,4 @@ git log te da info de autor fecha etc
 git branch -M main es para cambiar la config de master a main (lo usan todos, es importante cambiarlo)
 git remote add origin https://github.com/Palermotiziana/utn-programacion-web-inicial.git
 esto es dinde mando el codigo, si no me acuerdo donde lo deje, con el enlace de la apagina web llego al mismo lugar
-pero le agrego .GIT y me lleva
+pero le agrego .GIT y me llevagit confiqq
