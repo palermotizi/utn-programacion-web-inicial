@@ -1,0 +1,44 @@
+/* mobile first como hay mas flujo de clientes se empieza por aca por lo general. es un publico mas gral. Pero no siempre, si estoy haciendo un homebanking o backoffice que necesita complejidad que no pueden ser muy visuales para celular y por lo gral usas compus porque es mas comodo, deberian empezar desde la compu. es lo mismo con excel o excalidraw, photoshop y asi. Los juniors empiezan con proyectos internos o secundarios. Es depende, hay que evaluarlo.*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Mobile first */
+.padre {
+    height: 100vh;
+    background-color: rgb(105, 5, 104);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centraod horizontal cuadno estoy en column */
+}
+ 
+/* div por defecto 100% mide . no se le suele poner width al padre. Por eso se usa vw en el hijo para que no dependa del padre*/
+
+.hijo {
+    width: 80vw;
+    height: 80vw;
+    /* aca no se usa px sino vw o porcentaje.*/
+    background-color: rgb(87, 87, 255);
+    border: 1px solid black;
+}
+
+/* REGLAS:
+-mediaquare deben estar abajo de todo
+-los elementos que queramos modificar deben tener la misma especificidad o superior a los estilos previos del mismo elemento.
+*/
+
+/* mediaquare: siempre se pone abajo de todo y es muy importante la especificidad osea las clases de los elementos. Si antes lo llame .padre .hijo, no puedo llamarlo en el media solo .hijo */
+/* cuando el ancho de pantalla sea > a 1000px -> aplica este codigo. tapa por cascada al color de arriba. Se usa el ancho osea width d referencia osea minwidth */
+@media  screen and (min-width: 1000px) {
+    .padre {
+        background-color: red;
+    }
+
+    .hijo {
+        background-color: rgb(255, 118, 184);
+    }
+}

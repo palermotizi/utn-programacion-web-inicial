@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre {
+    display: flex;
+    height: 100vh;
+    flex-direction: column; /*direccion del flexbox en fil, es para los hijos*/
+    background-color: green;
+    /* espaciado entre cada hijo */
+    /* gap: 20px;
+    justify-content: center; /*centrado horizontal*/
+    /* align-items: center; centrado horizontal  */
+    justify-content: center; /*alineado horizontal pero con el flexdirection column se invierten los ejes*/
+    align-items: center;
+}
+
+.hijo {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: rgb(228, 134, 134);
+    border: 1px solid black;
+    text-align: center;
+}

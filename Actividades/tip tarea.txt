@@ -1,0 +1,26 @@
+en la tarea mirar por el mobile phone, no mirar por el tamaño desktop
+
+contenedor de todas las cartas:
+section/div
+
+cada carta es un article porque es importante el texto:
+imagen
+párrafo 
+
+css de section
+display flex
+flexdirection columna
+align ítems center
+gap 40px
+padding 10px
+
+cajitas
+display flex
+flex direction column
+background color 
+gap (espaciado entre imagen y texto) 
+fontfam
+fontsize
+
+
+usar variables para fuente color 

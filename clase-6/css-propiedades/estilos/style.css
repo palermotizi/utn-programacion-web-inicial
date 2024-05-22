@@ -1,0 +1,39 @@
+/* html {
+    font-size: 10px;
+    background-color: rgb(255, 235, 169);
+} */
+@import url('./font.css');
+
+h1 {
+    color: rgba(188, 0, 91, 0.948);
+    font-size: 60px;
+    text-decoration: underline blue solid;
+    /* letter-spacing: 1px;
+    word-spacing: 10px; */
+    line-height: 60px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+div {
+    background-color: aquamarine;
+    width: 300px;
+    height: 100px;
+    /* elemento en bloque
+    si ancho y alto
+    no se puede alinear */
+    display: inline;
+}
+
+span {
+    background-color: red;
+    /* width: 6600px;
+    height: 3000px; 
+    No ancho ni alto
+    se puede alinear*/
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}

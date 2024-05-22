@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.padre {
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100vh;
+    position: relative;
+    margin-bottom: 200vh;
+    /* si no pongo el position distinto a static, el cuadrado elemento empieza desde el body, no del padre. Siemrpe que tengamos absoluto, el padre tiene que ser relativo */
+}
+
+.padre .hijo {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+    z-index: 2;
+
+}
+
+/* .padre .hijo:nth-child(2) {
+    position: relative;
+    /* bottom: 20px; */
+    /* va para arriba agrega espacio abajo */
+    /* top: 20px; */
+    /* va para abajo agrega espacio desde arriba */
+    /* right: 300px; */
+    /* right permite superposición de elementos */
+    /* background-color: red;
+    z-index: 1; */
+    /* para mandar a uno mas atras que el otro se pone zindex y el num, mientras mayor sea el num mas adelante esta */
+/* } */
+
+/* .padre .hijo:nth-child(2) {
+    position: absolute;
+    left: 800px;
+    /* left: calc(50% - 200px); */
+    /* sirve para hacer calculos */
+    /* background-color: red;
+    z-index: 1;
+    top: 200px;
+}  */
+
+.padre .hijo:nth-child(2) {
+    position: fixed;
+    /* hace que el elemento quede pegado aunque naveguemos */
+    /* aca sigue aparecindo en el principio de lapag cuand otiene 0 de valor */
+    left: 800px;
+    /* left: calc(50% - 200px); */
+    /* sirve para hacer calculos */
+    background-color: red;
+    z-index: 1;
+    top: 200px;
+    /* width: 100%;
+    aca agrando el elemetno como bucsrodr */
+}
+
+.wsp {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: yellowgreen;
+}
+
+.padre .hijo:nth-child(2) {
+    position: sticky;
+    top: 20px;
+    background-color: red;
+    width: 300px;
+    z-index: 1;
+}

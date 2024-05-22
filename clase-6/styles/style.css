@@ -1,0 +1,12 @@
+@import url(./button.css);
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown !important;
+}
+h1 {
+    color: rgb(0, 235, 244);
+}
+
+.ahref {
+    background-color: rgb(205, 159, 249);
+}

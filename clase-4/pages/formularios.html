@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>informacion de usuario</h2>
+        <div>
+            <label for="username">Escribe el nombre de usuario:</label>
+            <input type="text" id="username" placeholder="username_1001" required maxlength="16" minlength="2">
+        </div>
+        <div>
+            <label for="password">Escribe la contraseña:</label>
+            <input type="password" id="password" placeholder="Password_9.">
+        </div>
+        <div>
+            <label for="email">Ingresa tu email</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="email">Ingresa una fecha</label>
+            <input type="date">
+            <input type="datetime">
+            <input type="datetime-local">
+            <input type="time" name="" id="">
+            <input type="file" name="" id="">
+            <input type="number" name="" id="" max="20" min="10">
+            <input type="range" name="" id="" max="10" min="0" value="10">
+            <input type="checkbox" name="" id="">
+        </div>
+         <div>
+            <label for="terms">acepto terminos y condiciones</label>
+             <input type="checkbox" name="" id="terms">
+         </div>
+         <div>
+            <h2>Que te gusta?</h2>
+            <label for="html">Html</label>
+            <input type="checkbox" name="" id="html">
+            <label for="css">css</label>
+            <input type="checkbox" name="" id="css">
+            <label for="js">js</label>
+            <input type="checkbox" name="" id="js">
+            
+         </div>
+
+         <div>
+            <h2>Que te gusta?</h2>
+            <label for="html">Html</label>
+            <input type="radio" name="tecnologia-preferida" id="html">
+            <label for="css">css</label>
+            <input type="radio" name="tecnologia-preferida" id="css">
+            <label for="js">js</label>
+            <input type="radio" name="tecnologia-preferida" id="js">
+            <label for="js">react</label>
+            <input type="radio" name="tecnologia" id="react">
+            <label for="js">next.js</label>
+            <input type="radio" name="tecnologia" id="nextjs">
+         </div>
+
+         <div>
+            <label for="mensaje">Ingrese un mensaje</label>
+            <textarea placeholder="hola" required cols="5" rows="8">hola</textarea>
+         </div>
+         <div>
+            <label for="pais">seleccione un pais</label>
+            <select name="" id="">
+                <option value="">Argentina</option>
+                <option value="">Francia</option>
+                <option value="" selected disabled>No seleccionado</option>
+            </select>
+         </div>
+        <button type="submit">enviar <img src="./assets/images/pngwing.com.png" width="24px" alt="pikachu"></button>
+        <input type="submit" value="confirmar">
+        <button type="button">pepe</button> 
+        <!-- boton generico el de arriba -->
+        <input type="reset">
+        <button type="reset">empezar de nuevo</button>
+    </form>
+</body>
+</html>

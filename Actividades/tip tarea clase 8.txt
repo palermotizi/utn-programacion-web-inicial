@@ -1,0 +1,2 @@
+para la ultima tarea de la clase 8:
+usar el nth child, hacer todo de cero. usar esa rpropiedad para dividir en colores, que quede contenido dentro del padre, etc.

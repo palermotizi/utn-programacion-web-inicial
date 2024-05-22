@@ -1,0 +1,18 @@
+h1{
+    color: rgb(239, 41, 87);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline 1px brown;
+}
+
+.subtitulo {
+    color: aqua;
+}
+
+.diferente {
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.subrayado {
+    text-decoration: 1px underline brown;
+}
