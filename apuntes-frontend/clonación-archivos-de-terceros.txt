@@ -1,0 +1,9 @@
+descargar codigo de otra persona:
+
+lo descargas yendo al github de la persona, tocas code<> y copiando la direccion del https. Ir a la carpeta donde vas a guardarla y abris con vs code y pones en la terminal: 
+
+git clone (https que copiaste)
+
+Sirve para traer todo el contenido entero de otro repositorio, en contexto de trabajo, si ya tienen un código base, clonas el código y seguis desde ahí.
+
+cuando actualiza otra persona, para que nosotros lo veamos de nuestro vscode ponemos el icono de actualizar abajo a la izquierda, donde dice main y se actualiza. despues va a aparecer en el source control un boton de refresh o algo asi mas automatico. Lo mejor es usarlo (para escribir) en la web antes que en el vscode asi siempre está actualizado.

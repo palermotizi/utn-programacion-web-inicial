@@ -1,0 +1,80 @@
+margin: espacio que va del borde hacia afuera
+
+border: 5px(grosor) 
+       types: solid - dashed - double - dotted - inset - outset
+
+lo aplica para los cuatro lados por defecto. si lo quiero de un lado distinto, pongo borderleft o border-right, etc.
+
+siempre se pone primero border y después border-left o right porque sino se tapan.
+
+padding: espacio del borde hacia adentro. 
+       types: padding-left - padding-right - padding- top, etc.
+
+para que no cambie el tamaño de la caja cuando ajustamos el texto: 
+arriba de toda la propiedad ponemos:
+box-sizing: border-box
+
+boxsizing esta en content-box por defecto
+cuando defino el sizing (tamaño) en 200px por ejemplo, afecto al contenido nomás sin afectar al margin, border, padding. Por eso se pone border-box para decir que los tamaños se cuentes desde el borde y no por defecto desde el contenido. 
+Se usa en todas las paginas y en todas las cajas.
+Si quiero que todos mis elementos tengan la misma config ponemos *box-sizing: border-box. Lo ponemos siempre al principio de todo css
+
+Si quiero poner un valor para arriba y aabajo y otro para derecha izquierda pongo:
+padding: 15px(el vertical ósea el eje y) 32px (el eje horizontal osea eje x).
+
+si quiero que tengan distintos arriba y abajo pero igual de los costados:
+el tercer valor representa el de abajo de todo.
+Se escribe en sentido horario, arriba son las 12 después vienen las 3 después las 6 después 9
+
+Esto mismo es para margin, sirve igual. 
+
+Padding | Margin: 
+propiedad: para todos los ejes; 
+propiedad: <eje x | horizontal> <eje y | vertical>;
+propiedad: <top> <eje x> <bottom>;
+propiedad: <top> <right> <bottom> <left>;
+
+Los elementos en linea osea inline NO tienen margin ni padding, no usar ni derecha izq arriba abajo, nada.
+
+Si queremos ponerle margin | padding hay que poner arriba de todo display:inline-block
+
+box-shadow: 1px 1px 1px 1px color
+el primero va para la derecha (positivo) | izquierda (negativo)
+el segundo hacia abajo arriba (negativo) | abajo (positivo)
+el tercero la difumina (blur) 
+el cuarto es la base, determina cuán grande va a ser la sombra respecto a su valor original
+el quinto le da el color
+
+se puede agregar otra sombra dentro del boxshadow
+box-shadow: 
+    20px 40px 30px 0px black,
+    inset 0px 0px 10px white;
+    ;
+inset le da la sombra interna
+podemos poner cuantas sombras queramos
+por defecto es outset (no existe la propiedad si la escribimos, ya esta puesta)
+
+para sacar el borde: border: none
+
+para que cuadno hagas clic y no se cambie el tamaño de la pagina por el brode de color, ponemos border solid  color transparente
+
+transición cambio de valor en x tiempo
+
+para seleccionar a un hijo solo en vez de ponerle otra clase o id (que no se pone id) usamos:
+.padre .hijo:nth-child(el num que queramos)
+
+cuando no hay esoacio suficiente para los hijos dentro del padre, la propiedad flexbox los limita, los ajusta por igual dentro de la pagina. Para solucionarlo usamos flexwrap (wordwrap)
+ 
+para poner un hijo abajo del otro: flexdirection: columna
+
+spacebetwen toma ele psacio restante y lo divide en espacio exacto entre ellos. es como un gap pero trbaja sobr ele espacio restante y se caclcula de manera automática.
+
+space evenly igual que el space betwen pero toma también los espaicos del costado 
+space around toma el espacio y divide entre los hijps la misma cantidad de espacio pero lo divide por 3. 
+
+espacio sobrante 100
+
+between espacio / cant de hijos -1 = 2 espacios finales
+evenly espacio /cant de hijos + 1 = 4 espacios 
+around espacio / cant de hijos
+                        

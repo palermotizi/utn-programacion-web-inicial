@@ -26,22 +26,21 @@ undefined
 */
 
 /*
-
-(0 * null) ---> true porque la negacion de 0 da true
+boleano: true o false 
+!(0 * null) ---> true porque la negacion de 0 da true
 
 !('' - 1) ----> false
 
 !NaN      ----> true
 
 */
-
 // let resultado = true || 'pepe' /*true */
 // let resultado = '' || 'pepe' /*'pepe' */
-// let resultado = '' || 0  /*  */
+// let resultado = '' || 0  /* 0 */
 // console.log(resultado)
 /*
 
-quieor dejar pasar a alguien que tenga mas de 18 año o tenga mas de 100000
+quieor dejar pasar a alguien que tenga mas de 18 año o tenga mas de $100000
 
 edad= 28
 dinero = 100
@@ -118,7 +117,7 @@ condicion = edad >= 18 && dinero > 6000
 
             true (segundo valor)
 
-            ==============================================================
+==============================================================
 edad = 10 
 dinero = 90000
 
@@ -186,6 +185,7 @@ porque el primer valor es un true
 
 EJERCICIO:
 
+los strings numericos se pueden multiplicar
 9 * '9' * null || 'pepe' && 'juan' 
 9 * '9' = '81'
 '81' * null = 0
@@ -245,7 +245,7 @@ sintaxis
 // var nombre = 'pepe'
 
 
-// // reasignacion, le doy valor despues
+// // reasignacion, le doy valor despues de crear la variable
 // edad = 90
 
 // // alert(nombre)
@@ -319,6 +319,7 @@ se puede redeclarar? NO (por el momento)
 
 
 /* 
+CONST ES6+ (EcmaScript 6)
 tiene hoisting? NO
 valor implicito en undefined? NO tengo que darle el valor
 se puede reasignar? NO
@@ -507,14 +508,35 @@ else SIEMPRE debe ir luego del cierre del bloque del if
 //     console.log('No se puede ser perfecto')
 // }
 
-let edad = prompt ('ingresa tu edad')
-let lenguaje = prompt ('ingresa tu lenguaje favorito')
-if (edad > 16 && lenguaje === 'JS'){
-    console.log('Bienvenido al desarrollo frontend')
-} 
-else if(edad > 14 && lenguaje == 'PHP'){
+// let edad = prompt ('ingresa tu edad')
+// let lenguaje = prompt ('ingresa tu lenguaje favorito')
+// if (edad > 16 && lenguaje === 'JS'){
+//     console.log('Bienvenido al desarrollo frontend')
+// } 
+// else if(edad > 14 && lenguaje == 'PHP'){
+//     console.log('bienvenido al desarrollo web backend')
+// } 
+// else {
+//     console.log('No se puede ser perfecto')
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+let edad = prompt('ingrese su edad')
+let lenguaje = prompt('ingrese su lenguaje favorito')
+if(edad > 16 && lenguaje === 'JS'){
+    console.log('Bienvenido al desarrollo web frontend')
+} else if (edad > 14 && lenguaje === 'PHP'){
     console.log('bienvenido al desarrollo web backend')
-} 
-else {
-    console.log('No se puede ser perfecto')
+} else {
+    console.log('no se puede ser perfecto en todo')
 }

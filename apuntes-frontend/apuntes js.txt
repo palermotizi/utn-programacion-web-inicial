@@ -1,0 +1,6 @@
+es importante conectarlo al final porque el js en un futuro hagamos código llamando al HTML. primero tiene que existir el titulo de HTML (cascada) porque sino tira error como que no existe el h1. por eso va al final. si lo ponemos arriba le ponermos atributo defer pero es mejor ponerlo abajo.
+
+HTML estructura
+css estilo
+js funcionalidad cod abierto, lenguaje de progrsmacion.
+

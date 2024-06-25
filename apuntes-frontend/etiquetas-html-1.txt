@@ -1,0 +1,108 @@
+alt + z el texto se amolda al tamaño de la pantalla (por  si tenes pantalla dividida o la pestaña chica)
+
+selecciono texto que quiero mover entre lineas y presiono alt + (flecha arriba o abajo).
+
+Tecla windows + : se abre el panel de emojis :)
+
+ETIQUETA + * + CANTIDAD DE VECES QUE QUERÉS REPETIRLO. (li*3)
+
+viewport: toda la pagina web sin contar el navegador de arriba ni la barra de herramientas de abajo. Solo lo blanco
+
+ETIQUETAS HTML:
+
+<head> contiene lista de config de la pag 
+<meta charset> config caracteres
+
+<body> contiene todo lo que vamos a ver en el viewport. 
+
+hay 6 etiquetas "h" (1 al 6) Se dividen por jerarquías (impacto visual):
+<h1> Título con más jerarquía osea llama más la atención, el texto más importante de la página NO ES EL MÁS GRANDE. Búsqueda de paginas web. 
+
+<h2> Título de menor jerarquía y así con todos.
+
+Pueden ubicarse en cualquier orden pero no puede haber un h2 sin un h1, no puede haber un h4 sin un h3, etc. 
+
+<h5> y <h6> ya casi no se usan. Si llegas al h6 es porque hiciste algo mal en la jerarquía.
+
+<h1> hay que tener cuidado repitiéndolo muchas veces. Tiene que estar relacionado.  La mayoría de las páginas solo usan un h1 pero learn to code usa 6. Es una excepción.
+
+desde <h2> para arriba (osea hasta h6) ya se pueden repetir las veces que quieras.
+
+
+<p> Párrafo 
+
+<span> No es un título ni un párrafo. Pequeña decoración, texto suelto por ahí. No tienen jerarquía para ser un título pero sirve para decorar.
+
+<div> Contenedor. contiene etiquetas, contenido, divide. Dos funciones: contiene y divide (principal funcion). Div es estructural, a nivel código. en la pagina no se ve.
+
+<hr> Mala práctica! con css no la usamos más. En html la usas porque es una línea horizontal para editar un poquito y quede más lindo. 
+
+<button> Genera un botón. No tiene funcionalidad por sí solo. Con js se le da una funcionalidad. 
+
+<ul> listado desordenado. (unordered list). Nos permite poner elementos de lista osea:
+<li> (list item) cosas de la lista, el contenido.
+<ol> lista ordenada (ordered list). Tiene orden basicamente. 
+
+ul son los ingredientes de una receta de cocina y ol son los pasos para cocinar.
+
+Lista dentro de otra lista, osea: 
+ingrendientes:
+   -Para la masa (primer lista)
+       -agua     (segunda lista)
+       -harina
+       -sal
+   -Para el relleno
+       -carne
+       -condimento
+       -queso
+
+Para hacer esto:
+
+<h3>Ingredientes</h3>
+    <ul>
+        <li>
+            Masa
+            <ul>
+                <li>Agua</li>
+                <li>Sal</li>
+                <li>Harina</li>
+                <li>Condimentos</li>
+            </ul>
+        </li>
+       <li>Relleno
+         <ul>
+            <li>Carne</li>
+            <li>Pollo</li>
+            <li>JyQ</li>
+            <li>Caprese</li>
+            <li>Atún</li>
+            <li>Choclo</li>
+        </ul>
+       </li>
+    </ul>
+
+
+Navegadores:
+<nav> sirve para indicarle al navegador que esta es la sección del navegador. Si no tenemos esta etiqueta podemos navegar igual. Los nav suelen tener links asi que queda:
+<a> hipervinculo nos permite movernos en una pagina o hacia otras. Por lo general suelen ser internas, siempre en la misma página.
+
+href="./index.html" el punto es para posicionarme sobre la carpeta en la que estamos 
+href="#" para que te lleve a un lugar de tu pagina, se usa el # y el id de donde quieras ir.
+
+<a href=link target="_blank" -> Para que cuando abras un link hacia otro lado, no se cierre tu página. 
+
+Está bueno para paginas de ventas de productos por ej mercado libre. Abris 50 productos distintos y comparas, no tenes que ir volviendo para atrás.
+
+id="ejemplo" es para que te lleven los links a este lugar. Puedo usar mismo id en Distintos html pero en el mismo html no. 
+
+Para ir de un index al otro pero en un punto específico:
+a href="./index#empanadas" 
+ESTO DE ARRIBA ES PARA PONER VARIOS INDEX E IR VIAJANDO ENTRE ELLOS
+
+navegaadores complejos requieren jerarquias porque hay links y sublinks.
+los escribimos en listas dentro de otras y otras listas. 
+
+
+
+
+

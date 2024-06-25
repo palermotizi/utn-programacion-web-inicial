@@ -1,0 +1,67 @@
+input types:
+time
+datetime
+datetime-local
+date
+file
+email
+hidden: se ve con js (hace que el usuario no vea el valor pero no es privado del todo porque en la consola se ve) value:token es un dato nomas no es necesario. Ahora no lo vamos a usar
+number se usa para la edad o cossas asi
+range es muy poco usado, se pone valor por defecto con value y puntua en el nuemro que le doy
+checkbox se usa un monton, es por si se cumple o no. se usa para eso, es booleano
+
+
+ALT + TOCAR EN DONDE QUIERO CAMBIAR ALMISMO TIEMPO
+
+el name sirve para decir que varias etiquetas pertenecen al mismo lugar"
+
+select 
+option value(es por lo que yo me guio)>Argentina</option>
+si quiero uno que aparezca por defecto, pongo selected y si quiero que no se vuelva a seleccionar una opcion (porejemplo el no seleccionado) pongo disabled
+
+
+ESTRUCTURAS:
+body 
+
+header
+
+nav
+
+main:
+    section
+article
+
+
+aside (adentro peude tener nav u otras etiquetas)
+
+seccion principal
+
+footer
+
+debugger
+
+giro
+
+
+que diferencia un article de un div: la importancia de un texto
+div es mas importante con h2, listas, etc
+article menos importante con img, parrafo, etc.
+puede haber articulos en otras partes del main
+
+diferencia entre article y section:
+article le da muhca importancia al texto
+la seccion le da un encuadre a una parte de tu pagina, contiene por ejemplo las opiniones de los usuarios, otra es la informacion de los productos, y asi.
+
+section dentro de una section se puede
+
+article dentro de div se puede
+el footer fuera del main
+las paginas tienen varias secciones
+una vez termino todo el main va a estar el footer
+arriba de todo el header
+toda la pagina encerrada en un body
+siemrpe se busca seguir la misma estructura
+si pones un div dentro e otro div, en la otra seccion trata de hacer lo mismo
+
+
+el selector de clase es con el . y el nombre de ka clase en css

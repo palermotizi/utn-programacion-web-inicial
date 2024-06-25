@@ -47,11 +47,13 @@ function buscarProducto(buscado){
     const resultadoDeBusqueda = []
     for (const producto of productos) {
         if (producto.title.includes(buscado.toLowerCase()) || producto.title.toUpperCase().includes(buscado.toUpperCase())){
-            resultadoDeBusqueda.push(producto);
+            resultadoDeBusqueda.push(producto)
         }
     }
     return resultadoDeBusqueda
 }
+
+// let stringBuscado = prompt('ingrese el nombre del producto que desea buscar')
 const resultado = buscarProducto('')
 console.log(resultado)
 

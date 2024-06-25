@@ -78,26 +78,26 @@ bucle de conteo: lo usamos cuando queremos repetir un bloque de codigo una deter
 // alert(sumaNumeros)
 
 // ================================== EJERCICIO ==========================================
-function validarYSolicitarNumero() {
-    let numero = prompt('ingrese un numero')
-    while (!numero || isNaN(numero)){
-        alert('dato no valido')
-        numero = prompt('ingrese un numero')
-    }
-    return Number(numero)
-}
+// function validarYSolicitarNumero() {
+//     let numero = prompt('ingrese un numero')
+//     while (!numero || isNaN(numero)){
+//         alert('dato no valido')
+//         numero = prompt('ingrese un numero')
+//     }
+//     return Number(numero)
+// }
 
-// let edad = validarYSolicitarNumero()
-// alert(edad)
+// // let edad = validarYSolicitarNumero()
+// // alert(edad)
 
-let numero = validarYSolicitarNumero()
-let sumaNumeros = 0 
+// let numero = validarYSolicitarNumero()
+// let sumaNumeros = 0 
 
-for(let i = 1; i <= numero; i = i + 1) {
-    numero = validarYSolicitarNumero()
-    sumaNumeros = sumaNumeros + numero
-}
-alert(sumaNumeros)
+// for(let i = 1; i <= numero; i = i + 1) {
+//     numero = validarYSolicitarNumero()
+//     sumaNumeros = sumaNumeros + numero
+// }
+// alert(sumaNumeros)
 
 
 // =========================== FUNCIONES ===================================================
@@ -145,3 +145,16 @@ alert(sumaNumeros)
 
 // alert(calcularIva(200))
 // y ahi aparece en el alert
+
+
+
+
+
+/*
+======================================================================
+*/
+let string = prompt('ingrese un string')
+while(!string || !isNaN(string)){
+    alert('no ingresaste un string')
+    string = prompt('ingrese un string')
+}
