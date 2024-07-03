@@ -1,0 +1,45 @@
+.color-card {
+    margin: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rebeccapurple;
+}
+
+.color-card .rgb {
+    border: 1px solid brown;
+}
+
+.color-card .likes {
+    border: 1px solid aqua;
+}
+
+.color-card .fecha {
+    border: 1px solid orchid;
+}
+
+
+.color-card button {
+    padding: 5px;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: none; */
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.color-card button i {
+    display: flex;
+    padding-top: 1.5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
+}
