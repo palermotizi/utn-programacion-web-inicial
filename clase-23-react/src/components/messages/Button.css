@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.whatsapp .top-bar button {
+    background-color: transparent;
+    padding: 2px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp .top-bar i {
+    color: #ffffff;
+    padding: 2px;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.whatsapp .top-bar .back {
+    position: relative;
+    left: 10px;
+}
+
+.whatsapp .top-bar .videocall {
+    position: relative;
+    left: 190px;
+}
+
+.whatsapp .top-bar .phonecall {
+    position: relative;
+    left: 200px;
+}
+
+.whatsapp .top-bar .three-dots {
+    position: relative;
+    left: 200px;
+}
+
+
+
+
+.whatsapp .low-bar .default-txt button {
+    background-color: transparent;
+    padding: 2px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp .low-bar .default-txt i {
+    color: #a2a0a0;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.whatsapp .low-bar .default-txt .emojis {
+    position: relative;
+    right: 10px;
+    border-radius: 80px;
+}
+
+.whatsapp .low-bar .default-txt .camera {
+    position: relative;
+    left: 140px;
+    border-radius: 80px;
+
+}
+
+.whatsapp .low-bar .default-txt .files {
+    position: relative;
+    left: 130px;
+    border-radius: 80px;
+}
+
+.whatsapp .low-bar .microphone{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    border: none;
+    background-color: rgb(34, 184, 69);
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    position: absolute;
+    top: 118px;
+    left: 325px;
+    cursor: pointer;
+}
