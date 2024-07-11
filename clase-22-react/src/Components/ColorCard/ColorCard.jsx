@@ -1,5 +1,4 @@
 import './ColorCard.css'
-import './ColorCardInd'
 import React from 'react'
 
 
@@ -7,7 +6,6 @@ import React from 'react'
 const ColorCard = (props) => {
   return (
     <div className='color-card'>
-
         <h3 className='rgb'>{props.colores}</h3>
         <div className='likes'>
             Likes: {props.likes} 
@@ -17,6 +15,7 @@ const ColorCard = (props) => {
     </div>
   )
 }
+
 
 
 export default ColorCard

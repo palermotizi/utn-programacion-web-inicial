@@ -1,13 +1,15 @@
 import React from 'react'
+import ColorCard from './ColorCard'
 
 const ColorCardInd = (props) => {
   return (
-        <div>
-            <div>{props.primerColor}</div>
-            <div>{props.segundoColor}</div>
-            <div>{props.tercerColor}</div>
-            <div>{props.cuartoColor}</div>
+        <div className='colores-individuales'>
+            <div className='primer-color'>{props.primerColor}</div>
+            <div className='segundo-color'>{props.segundoColor}</div>
+            <div className='tercer-color'>{props.tercerColor}</div>
+            <div className='cuarto-color'>{props.cuartoColor}</div>
         </div>
+        
   )
 }
 

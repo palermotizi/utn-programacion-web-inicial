@@ -2,67 +2,51 @@ import React from 'react'
 // import Button from './Components/Button'
 // import Layout from './Components/Layout'
 // import CodePointInfo from './Components/CodePointInfo'
+
+
 import ColorCard from './Components/ColorCard/ColorCard'
 import ColorCardInd from './Components/ColorCard/ColorCardInd'
 
 
-
-
 const App = () => {
+
+
 
   const tarjetas = [
     {
       colores: ['#000000', '#FF4191', '#E90074', '#FFF078'],
       likes: '256',
-      fecha: '14 hours'
+      fecha: '14 hours',
+      id: 1
     },
     {
-      colores: ['#000000', '#FF4191', '#E90074', '#FFF078'],
+      colores: ['#444555', '#FA443F', '#EA654S', '#3E446A'],
       likes: '120',
       fecha: '3 hours',
+      id: 2
     },
     {
-      colores: ['#000000', '#FF4191', '#E90074', '#FFF078'],
+      colores: ['#5110JA', '#FF3391', '#DDA341', '#AFF900'],
       likes: '18',
       fecha: '5 minutes',
+      id: 3
     },
   ]
 
-  const colors = [
-    {
-      primerColor: '#000000',
-      segundoColor: '#FF4191',
-      tercerColor: '#E90074',
-      cuartoColor: '#FFF078'
-    },
-    {
-      primerColor: '#000000',
-      segundoColor: '#FF4191',
-      tercerColor: '#E90074',
-      cuartoColor: '#FFF078'
-    },
-    {
-      primerColor: '#000000',
-      segundoColor: '#FF4191',
-      tercerColor: '#E90074',
-      cuartoColor: '#FFF078'
-    },
-  ]
 
   const listaJSXColores = tarjetas.map((tarjeta) => {
-    return (<ColorCard colores={tarjeta.colores} likes={tarjeta.likes} fecha={tarjeta.fecha} /> )
+    return (
+    <>
+      <ColorCardInd primerColor={tarjeta.colores[0]} segundoColor={tarjeta.colores[1]} tercerColor={tarjeta.colores[2]} cuartoColor={tarjeta.colores[3]} />
+    <ColorCard colores={tarjeta.colores} likes={tarjeta.likes} fecha={tarjeta.fecha} /> 
+    </>
+    )
   })
 
-  
-  const listaJSXIndividual = colors.map((color) => {
-    return (<ColorCardInd primerColor={color.primerColor} segundoColor={color.segundoColor} tercerColor={color.tercerColor} cuartoColor={color.cuartoColor}/>)
-  })
-  
 
   return (
     <div> 
       {listaJSXColores} 
-      {listaJSXIndividual}
     </div>
   )
 }
