@@ -87,14 +87,14 @@ const App = () => {
     },
     {
       author: 'Pepe',
-      content: 'Bien bien, acá andamos. Vos? Soy Pepe',
+      content: 'Soy Pepe',
       date: 'ayer a 15:36',
       status: 'visto',
       id: 3
     },
     {
       author: 'yo',
-      content: 'Bien, saludos.',
+      content: 'Ah bueno, saludos.',
       date: 'ayer a 15:37',
       status: 'entregado',
       id: 4
