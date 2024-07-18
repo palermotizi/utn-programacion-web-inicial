@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.whatsapp .top-bar button {
+    background-color: transparent;
+    padding: 2px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp .top-bar i {
+    color: #ffffff;
+    padding: 2px;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.whatsapp .top-bar .back {
+    position: relative;
+    left: 10px;
+}
+
+.whatsapp .top-bar .videocall {
+    position: relative;
+    left: 190px;
+}
+
+.whatsapp .top-bar .phonecall {
+    position: relative;
+    left: 200px;
+}
+
+.whatsapp .top-bar .three-dots {
+    position: relative;
+    left: 200px;
+}

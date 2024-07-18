@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #192930;
+
+}
+
+.link .contact-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.link .last-conection {
+    font-size: 15px;
+}
+
+.link .profile-pic {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.link .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

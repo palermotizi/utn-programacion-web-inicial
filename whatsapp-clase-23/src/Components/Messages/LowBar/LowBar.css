@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+.whatsapp .low-bar {
+   
+}
+
+.whatsapp .low-bar .default-txt{
+    
+}
+*/
+.low-bar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 450px;
+    justify-content: space-between;
+}
+
+.low-bar .message-input {
+    display: flex;
+    background-color: #101B20;
+    color: #a2a0a0;
+    width: 85%;
+    height: 40px;
+    border-radius: 80px;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    top: 118px;
+    left: 5px;
+}
+
+.low-bar .message-input .message-field {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    color: white;
+    outline: transparent;
+}
+
+ .low-bar .message-input button {
+    background-color: transparent;
+    padding: 2px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.low-bar .message-input i {
+    color: #a2a0a0;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.low-bar .message-input .emojis {
+    position: relative;
+    right: 10px;
+    border-radius: 80px;
+}
+
+.low-bar .message-input .camera {
+    position: relative;
+    left: 140px;
+    border-radius: 80px;
+}
+
+.low-bar .message-input .files {
+    position: relative;
+    left: 130px;
+    border-radius: 80px;
+}
+
+.low-bar .send{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    border: none;
+    background-color: rgb(34, 184, 69);
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    position: absolute;
+    top: 118px;
+    left: 325px;
+    cursor: pointer;
+}
