@@ -23,7 +23,7 @@ const Detail = () => {
   return (
     <div className="app-container">
       <div className="whatsapp">
-        <TopBar contactName={contact.nombre}/>
+          <TopBar contactName={contact.nombre}/>
         <MessageContainer messages={messages} />
         <LowBar addMessage={addMessage} />
       </div>

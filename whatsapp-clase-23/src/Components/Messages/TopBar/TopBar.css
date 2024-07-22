@@ -12,30 +12,34 @@
     cursor: pointer;
 }
 
+.whatsapp .name {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #ffffff;
+    padding-left: 10px;
+    justify-content: center;
+}
+
 .whatsapp .top-bar i {
+    display: flex;
     color: #ffffff;
     padding: 2px;
     font-size: 20px;
-    position: relative;
-    top: 10px;
 }
 
 .whatsapp .top-bar .back {
-    position: relative;
-    left: 10px;
+    margin: 10px;
 }
 
 .whatsapp .top-bar .videocall {
-    position: relative;
-    left: 190px;
+    margin-left: 150px;
 }
 
 .whatsapp .top-bar .phonecall {
-    position: relative;
-    left: 200px;
+    margin-left: 10px;
 }
 
 .whatsapp .top-bar .three-dots {
-    position: relative;
-    left: 200px;
+    margin-left: 5px;
 }
