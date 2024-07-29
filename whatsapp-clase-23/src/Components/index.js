@@ -4,6 +4,7 @@ import MessageContainer from './Messages/MessageContainer/MessageContainer'
 import TopBar from './Messages/TopBar/TopBar'
 import LowBar from './Messages/LowBar/LowBar'
 import Messages from './Messages/Messages'
+import ContactProfile from './ContactProfile/ContactProfile'
 
 export {
   ContactList,
@@ -11,5 +12,6 @@ export {
   MessageContainer,
   LowBar,
   TopBar,
-  Messages
+  Messages,
+  ContactProfile
 }   

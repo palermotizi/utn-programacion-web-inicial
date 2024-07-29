@@ -71,7 +71,7 @@
 
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Home, Detail } from './Pages'
+import { Home, Detail, Profile } from './Pages'
 import './App.css'
 
 const App = () => {
@@ -79,6 +79,7 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/detail/:contact_id' element={<Detail />} />
+      <Route path='/profile/:contact_id' element={<Profile />} />
     </Routes>
   )
 }

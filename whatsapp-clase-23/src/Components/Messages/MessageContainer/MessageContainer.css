@@ -1,12 +1,48 @@
+.message-container {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 60px; 
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;    
+}
+
+.message-container::-webkit-scrollbar {
+    width: 3px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    background-color: #3d3c3c97;
+    border-radius: 10px;
+}
+
+
+.message-container span {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    font-size: 15px;
+    height: 25px;
+    margin-left: 150px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #101b20e9;
+    color: #a2a0a0;
+    padding-bottom: 3px;
+}
+
 .data {
     max-width: 80%;
     padding: 10px;
     border-radius: 10px;
     margin: 10px 0;
-    box-shadow: 0px, 0px, 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     display: inline-block;
     word-wrap: break-word;
-    overflow: hidden;
 }
 
 .author {
@@ -22,5 +58,4 @@
     text-align: right;
     font-size: 0.8em;
     color: #798085;
-    overflow: hidden;
 }

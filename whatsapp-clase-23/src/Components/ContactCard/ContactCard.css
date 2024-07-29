@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 .link {
     text-decoration: none;
     color: #ffffff;
@@ -14,7 +12,6 @@
     align-items: center;
     padding: 15px;
     border-bottom: 1px solid #192930;
-
 }
 
 .link .contact-name {

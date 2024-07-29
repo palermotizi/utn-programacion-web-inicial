@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
-.low-bar{
+.low-bar {
     display: flex;
     flex-direction: column;
-    margin-top: 570px;
-    margin-left: 8px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    align-items: start;
 }
 
 .low-bar .message-input {
@@ -24,14 +27,13 @@
 .low-bar .message-input .message-field {
     background-color: transparent;
     border: none;
-    font-size: 17px;
+    font-size: 15px;
     color: white;
     outline: transparent;
 }
 
- .low-bar .message-input button {
+.low-bar .message-input button {
     background-color: transparent;
-    padding: 2px;
     font-size: 20px;
     border: none;
     cursor: pointer;
@@ -39,8 +41,9 @@
 
 .low-bar .message-input i {
     color: #a2a0a0;
-    padding: 2px;
+    padding: 5px;
     font-size: 20px;
+    align-items: center;
 }
 
 .low-bar .message-input .emojis {
@@ -53,14 +56,10 @@
 }
 
 .low-bar .message-input .camera {
-    border-radius: 80px;
+    margin-left: 10px;
 }
 
-.low-bar .message-input .files {
-    border-radius: 80px;
-}
-
-.low-bar .send{
+.low-bar .send {
     display: flex;
     width: 40px;
     height: 40px;
@@ -71,7 +70,7 @@
     align-items: center;
     font-size: 17px;
     cursor: pointer;
-    position: relative;
-    bottom: 40px;
-    left: 315px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }

@@ -2,22 +2,23 @@ import React, { useState } from 'react'
 import './LowBar.css'
 
 const LowBar = ({ addMessage }) => {
-  const [message, setMessage] = useState('')
+  const [inputValue, setInputValue] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (message.trim()) {
-      addMessage(message)
-      setMessage('')
+    if (inputValue.trim()) {
+      addMessage(inputValue)
+      setInputValue('')
     }
   }
 
   const handleSendClick = () => {
-    if (message.trim()) {
-      addMessage(message)
-      setMessage('')
+    if (inputValue.trim()) {
+      addMessage(inputValue)
+      setInputValue('')
     }
   }
+
 
   return (
     <div className="low-bar">
@@ -27,8 +28,8 @@ const LowBar = ({ addMessage }) => {
         </button>
         <input
           type="text"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
           placeholder='mensaje'
           className='message-field'
         />

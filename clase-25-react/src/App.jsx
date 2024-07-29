@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, Routes, Route } from 'react-router-dom'
 import { Detail, Home, Cart } from './Pages'
+import NewProduct from './Pages/NewProduct/NewProduct'
+import Login from './Pages/Login/Login'
 
 function App() {
   
@@ -10,6 +12,9 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/detail/:producto_id' element={<Detail />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/product/new' element={<NewProduct />}/>
+        {/* <Route path='/' element={<NotFound />}/> */}
       </Routes>
   )
 }

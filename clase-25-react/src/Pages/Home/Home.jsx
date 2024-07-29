@@ -1,18 +1,49 @@
 import React from 'react'
 import { ProductList } from '../../Components'
-import { productos } from '../../data/productsData'
-import { obtenerProductos } from '../../Components/helpers/productos'
 
+
+import { Link } from 'react-router-dom'
+import { useGlobalContext } from '../../Context/GlobalContext'
 
 const Home = () => {
-  const lista_productos = obtenerProductos()
-  console.log(lista_productos)
+  const {productos, getUserData, logout} = useGlobalContext()
+  const user = getUserData()
+ 
+  
+
   return (
     <div>
-        <h1>Elije nuestros productos</h1>
-        <ProductList productos={productos} />
+      {
+        user 
+        ?
+        <button onClick={logout}>Cerrar sesion</button>
+        :
+        <Link to={'/login'}>Login</Link>
+      }
+      {
+        (user && user.role === 'admin') 
+        &&
+        <>
+          <Link to={'/product/new'}>Crear producto</Link>
+          <Link to={'/cart'}>Carrito</Link>
+        </>
+      }
+      {
+        (user && user.role === 'user') 
+        &&
+        <>
+          <Link to={'/cart'}>Carrito</Link>
+        </>
+      }
+
+      <div className='imageContainer'>
+        <img src="/imagenes/Juan.jpg" alt="" />
+      </div>
+      <h1>Elige nuestros productos</h1>
+      <ProductList productos={productos}/>
     </div>
   )
 }
+
 
 export default Home

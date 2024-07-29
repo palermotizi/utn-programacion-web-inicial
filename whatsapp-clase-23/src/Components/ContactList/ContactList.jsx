@@ -5,10 +5,10 @@ const ContactList = ({ contactos }) => {
   return (
     <div>
       {contactos.map(contact => (
-        <ContactCard contact={contact} key={contact.id} />
+            <ContactCard contact={contact} key={contact.id} />
       ))}
     </div>
-  );
-};
+  )
+}
 
 export default ContactList

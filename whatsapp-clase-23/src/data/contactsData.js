@@ -1,7 +1,7 @@
 export const DATA_CONTACTOS = [
     {
       nombre: 'Messi',
-      thumbnail: './messi.webp',
+      thumbnail: '/messi.webp',
       ultima_conexion: 'ayer',
       id: 1,
       mensajes: [
@@ -42,7 +42,7 @@ export const DATA_CONTACTOS = [
     {
       nombre: 'Abuelita',
       id: 2,
-      thumbnail: './abuela.webp',
+      thumbnail: '/abuela.webp',
       ultima_conexion: 'hoy',
       mensajes: [
         {
@@ -73,7 +73,7 @@ export const DATA_CONTACTOS = [
     },
     {
       nombre: 'Pepe',
-      thumbnail: './pepe.jpg',
+      thumbnail: '/pepe.jpg',
       ultima_conexion: 'hace 2 dias',
       id: 3,
       mensajes: [
@@ -97,7 +97,7 @@ export const DATA_CONTACTOS = [
     },
     {
       nombre: 'Maria',
-      thumbnail: './maria.webp',
+      thumbnail: '/maria.webp',
       ultima_conexion: 'hace 2 dias',
       id: 4,
       mensajes: [
@@ -121,7 +121,7 @@ export const DATA_CONTACTOS = [
     },
     {
       nombre: 'Marta',
-      thumbnail: './marta.webp',
+      thumbnail: '/marta.webp',
       ultima_conexion: 'hace 5 dias',
       id: 5,
       mensajes: [
@@ -145,7 +145,7 @@ export const DATA_CONTACTOS = [
     },
     {
       nombre: 'Julieta',
-      thumbnail: './julieta.jpg',
+      thumbnail: '/julieta.jpg',
       ultima_conexion: 'hace 5 dias',
       id: 6,
       mensajes: [
@@ -195,7 +195,7 @@ export const DATA_CONTACTOS = [
     },
     {
       nombre: 'Pedro',
-      thumbnail: './pedro.webp',
+      thumbnail: '/pedro.webp',
       ultima_conexion: 'hace 5 dias',
       id: 7,
       mensajes: [
@@ -227,7 +227,7 @@ export const DATA_CONTACTOS = [
     },
     {
       nombre: 'Juanba',
-      thumbnail: './juanba.webp',
+      thumbnail: '/juanba.webp',
       ultima_conexion: 'hace 5 dias',
       id: 8,
       mensajes: [
