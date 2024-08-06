@@ -1,4 +1,4 @@
-import React, { createContext } from "react"
+import React, { createContext, useEffect } from "react"
 import { useContext, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { v4 as uuid} from "uuid"
@@ -11,6 +11,7 @@ export const GlobalProvider = ({ children }) => {
     const savedContacts = localStorage.getItem('contacts')
     return savedContacts ? JSON.parse(savedContacts) : DATA_CONTACTOS
   })
+  const [searchTerm, setSearchTerm] = useState('')
   const navigate = useNavigate()
 
   const handleDeleteContact = (id) => {
@@ -31,8 +32,18 @@ export const GlobalProvider = ({ children }) => {
     navigate('/')
   }
 
+  useEffect(() => {
+    const savedContacts = localStorage.getItem('contacts')
+    if (savedContacts) {
+      setContacts(JSON.parse(savedContacts))
+    }
+  }, [])
+
+  const filteredContacts = contacts.filter(contact => 
+    contact.nombre && contact.nombre.toLowerCase().includes(searchTerm.toLowerCase()))
+
   return (
-    <GlobalContext.Provider value={{ contacts, handleDeleteContact, handleCreateContact }}>
+    <GlobalContext.Provider value={{ contacts: filteredContacts, setSearchTerm, handleDeleteContact, handleCreateContact }}>
       {children}
     </GlobalContext.Provider>
   )

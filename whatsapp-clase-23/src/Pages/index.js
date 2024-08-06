@@ -5,5 +5,5 @@ import Profile from './Profile/Profile'
 export {
   Home,
   Detail,
-  Profile
+  Profile,
 }

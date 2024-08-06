@@ -36,6 +36,9 @@ const handleBackClick = () => {
                 <button>
                     <i className="bi bi-search">Buscar</i>
                 </button>
+                <button>
+                    <i className="bi bi-images">Archivos</i>
+                </button>
             </div>
 
             <div className='profile-options'>

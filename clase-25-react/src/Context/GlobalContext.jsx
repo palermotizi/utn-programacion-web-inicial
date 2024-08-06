@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import { eliminarProductoPorId, obtenerProductos } from '../Components/helpers/productos'
 import { useNavigate } from 'react-router-dom'
 import { v4 as uuid } from 'uuid';
@@ -8,8 +8,28 @@ const GlobalContext = createContext()
 
 export const GlobalContextProvider = ({children}) => {
     const [productos, setProductos] = useState(obtenerProductos()) 
+    const [searchTerm, setSearchTerm] = useState('')
+
+    const handleChangeSearchTerm = (e) => {
+        setSearchTerm(e.target.value)
+    }
+
+    useEffect(() => {
+        const productList = obtenerProductos()
+        if(searchTerm != ''){
+            const newProductList = productList.filter(product => product.nombre.toLowerCase().includes(searchTerm.toLowerCase()))
+            setProductos(newProductList)
+        } else {
+            setProductos(productList)
+        }, [searchTerm])
+    
+
     const [carrito, setCarrito] = useState(obtenerCarrito())
     const navigation = useNavigate()
+
+    useEffect(() => {
+       console.log('se recargó el producto')
+    }, [productos])
 
     const handleDeleteProduct = (id) => {
         setProductos(eliminarProductoPorId(id))

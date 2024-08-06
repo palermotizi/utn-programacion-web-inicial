@@ -3,6 +3,7 @@ import Home from './Home/Home'
 import Cart from './Cart/Cart'
 import NewProduct from './NewProduct/NewProduct'
 import NotFound from './404NotFound/404NotFound'
+import Review from './Review/Review'
 
 export{
     Home,
@@ -11,4 +12,5 @@ export{
     // Login,
     NewProduct,
     NotFound,
+    Review
 }

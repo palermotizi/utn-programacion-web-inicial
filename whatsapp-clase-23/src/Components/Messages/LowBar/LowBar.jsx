@@ -23,26 +23,30 @@ const LowBar = ({ addMessage }) => {
   return (
     <div className="low-bar">
       <form className="message-input" onSubmit={handleSubmit}>
-        <button type="button" className="emojis">
-          <i className="bi bi-emoji-smile"></i>
-        </button>
-        <input
-          type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          placeholder='mensaje'
-          className='message-field'
-        />
-        <button type='button' className="files">
-          <i className="bi bi-paperclip"></i>
-        </button>
-        <button className="camera">
-          <i className="bi bi-camera"></i>
-        </button>
+        <div className="emojis-message">
+          <button type="button" className="emojis">
+            <i className="bi bi-emoji-smile"></i>
+          </button>
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            placeholder='mensaje'
+            className='message-field'
+          />
+        </div>
+        <div className="form-options">
+          <button type='button' className="files">
+            <i className="bi bi-paperclip"></i>
+          </button>
+          <button className="camera">
+            <i className="bi bi-camera"></i>
+          </button>
+          <button type='button' className="send" onClick={handleSendClick}>
+            <i className="bi bi-send-fill"></i>
+          </button>
+        </div>
       </form>
-      <button type='button' className="send" onClick={handleSendClick}>
-        <i className="bi bi-send-fill"></i>
-      </button>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { LowBar, TopBar } from '../../Components'
 import MessageContainer from '../../Components/Messages/MessageContainer/MessageContainer'
 import GlobalContext from '../../Context/GlobalContext'
+import './Detail.css'
 
 const Detail = () => {
   const { contact_id } = useParams()
@@ -35,14 +36,14 @@ const Detail = () => {
   }
 
   return (
-    <div className="app-container">
       <div className="whatsapp">
         <TopBar contactName={contact.nombre} contactImage={contact.thumbnail} contactId={contact.id}/>
-        <img src="/background.jpg" alt="background" />
+        <div className="background">
+          <img src="/background.jpg" alt="background" className='background-img' />
+        </div>
         <MessageContainer messages={messages} />
         <LowBar addMessage={addMessage} />
       </div>
-    </div>
   )
 }
 

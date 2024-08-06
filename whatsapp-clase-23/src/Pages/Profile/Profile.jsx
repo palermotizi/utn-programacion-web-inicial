@@ -11,11 +11,9 @@ const Profile = () => {
     const contact = contacts.find(contact => contact.id.toString() === contact_id)
 
   return (
-      <div className='profile-background'>
         <div className="profile-container">
             <ContactProfile contact={contact} onDelete={handleDeleteContact} />
         </div>
-      </div>
   )
 }
 

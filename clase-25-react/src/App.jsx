@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, Routes, Route } from 'react-router-dom'
-import { Detail, Home, Cart } from './Pages'
+import { Detail, Home, Cart, Review } from './Pages'
 import NewProduct from './Pages/NewProduct/NewProduct'
 import Login from './Pages/Login/Login'
 
@@ -14,7 +14,7 @@ function App() {
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<Login />} />
         <Route path='/product/new' element={<NewProduct />}/>
-        {/* <Route path='/' element={<NotFound />}/> */}
+        <Route path='/reviews' element={<Review />} />
       </Routes>
   )
 }

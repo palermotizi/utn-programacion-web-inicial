@@ -127,7 +127,7 @@ export const DATA_CONTACTOS = [
       mensajes: [
         {
           author: 'yo',
-          text: 'hola! te queria invitar a mi cumpleaños el sabado a las 16hs. Confirmar asistencia',
+          text: '¡Hola Marta! ¿Cómo te va?',
           estado: 'visto',
           day: 'viernes',
           hour: '8:38',
@@ -135,12 +135,28 @@ export const DATA_CONTACTOS = [
         },
         {
           author: 'Marta',
-          text: 'voy',
+          text: '¡Hola! Todo bien, ¿y vos?',
           estado: 'visto',
           day: 'lunes',
           hour: '8:40',
           id: '2'
         },
+        {
+          author: 'yo',
+          text: 'Bien también. ¿Nos vemos el fin de semana?',
+          estado: 'visto',
+          day: 'viernes',
+          hour: '9:10',
+          id: '3'
+      },
+      {
+        author: 'Marta',
+        text: 'Sii dale',
+        estado: 'visto',
+        day: 'lunes',
+        hour: '9:30',
+        id: '4'
+      },
       ]
     },
     {
@@ -151,7 +167,7 @@ export const DATA_CONTACTOS = [
       mensajes: [
         {
           author: 'yo',
-          text: 'hola! te queria invitar a mi cumpleaños el sabado a las 16hs. Confirmar asistencia',
+          text: 'hola! te queria invitar a mi cumpleaños el sabado a las 16hs.',
           estado: 'visto',
           day: 'viernes',
           hour: '8:38',
@@ -159,7 +175,7 @@ export const DATA_CONTACTOS = [
         },
         {
           author: 'Julieta',
-          text: 'hola fulanitaaa',
+          text: 'hola!!',
           estado: 'visto',
           day: 'lunes',
           hour: '9:00',
@@ -167,7 +183,7 @@ export const DATA_CONTACTOS = [
         },
         {
           author: 'Julieta',
-          text: 'mañana puedo ir pero a las 18hs que salgo de trabajar',
+          text: 'buenisimoo, nos vemos mañana',
           estado: 'visto',
           day: 'lunes',
           hour: '9:00',
@@ -176,7 +192,7 @@ export const DATA_CONTACTOS = [
         {
           
           author: 'Julieta',
-          text: 'te parece bien?',
+          text: 'llevo algo?',
           estado: 'visto',
           day: 'lunes',
           hour: '9:01',
@@ -185,7 +201,7 @@ export const DATA_CONTACTOS = [
         {
           
           author: 'yo',
-          text: 'bueno, cortamos la torta a las 18 30',
+          text: 'nNo hace falta, gracias :)',
           estado: 'visto',
           day: 'lunes',
           hour: '9:27',
@@ -201,7 +217,7 @@ export const DATA_CONTACTOS = [
       mensajes: [
         {
           author: 'yo',
-          text: 'hola! te queria invitar a mi cumpleaños el sabado a las 16hs. Confirmar asistencia',
+          text: 'hola! te queria invitar a mi cumpleaños el sabado a las 16hs',
           estado: 'visto',
           day: 'viernes',
           hour: '8:38',
@@ -209,7 +225,7 @@ export const DATA_CONTACTOS = [
         },
         {
           author: 'Pedro',
-          text: 'hola fulanita como andas? feliz cumple!',
+          text: 'Hola! como andas? feliz cumple!',
           estado: 'visto',
           day: 'lunes',
           hour: '8:41',
@@ -217,7 +233,7 @@ export const DATA_CONTACTOS = [
         },
         {
           author: 'Pedro',
-          text: 'el sabado estoy re complicado, no voy a poder ir pero paso el domingo a saludar',
+          text: 'yo voy!',
           estado: 'visto',
           day: 'lunes',
           hour: '8:41',
@@ -233,7 +249,7 @@ export const DATA_CONTACTOS = [
       mensajes: [
         {
           author: 'yo',
-          text: 'hola! te queria invitar a mi cumpleaños el sabado a las 16hs. Confirmar asistencia',
+          text: 'hola juanba, mañana vamos al gimnasio a las 14hs?',
           estado: 'visto',
           day: 'viernes',
           hour: '8:38',
@@ -241,7 +257,7 @@ export const DATA_CONTACTOS = [
         },
         {
           author: 'Juanba',
-          text: 'buenas buenas, yo voy!',
+          text: 'buenas buenas, sii dale',
           estado: 'visto',
           day: 'lunes',
           hour: '20:57',
@@ -249,7 +265,7 @@ export const DATA_CONTACTOS = [
         },
         {
           author: 'Juanba',
-          text: 'hay que llevar algo?',
+          text: '👌',
           estado: 'visto',
           day: 'lunes',
           hour: '8:41',
