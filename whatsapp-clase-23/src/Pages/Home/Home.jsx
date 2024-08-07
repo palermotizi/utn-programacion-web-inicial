@@ -2,10 +2,12 @@ import React, { useContext, useState } from 'react'
 import ContactList from '../../Components/ContactList/ContactList'
 import './Home.css'
 import GlobalContext from '../../Context/GlobalContext'
+import CreateContact from '../../Components/CreateContact/CreateContact'
 
 const Home = () => {
   const { contacts, setSearchTerm } = useContext(GlobalContext)
   const [searchInput, setSearchInput] = useState('')
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleSearchOnChange = (e) => {
     setSearchInput(e.target.value)
@@ -16,12 +18,20 @@ const Home = () => {
     setSearchTerm(searchInput)
   }
 
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
   return (
       <div className='home-whatsapp'>
         <div className="home-top-bar">
           <h1 className='contact-title'>Contactos</h1>
           
-              <button className='add-button'>
+              <button className='add-button' onClick={openModal}>
                 <p className='add-button-text'>Nuevo contacto</p>
                 <i className="bi bi-plus-lg"></i>
               </button>
@@ -50,7 +60,9 @@ const Home = () => {
           )
         }
         </div>
+        {isModalOpen && <CreateContact closeModal={closeModal} />}
       </div>
+
   )
 }
 

@@ -25,6 +25,7 @@ export const GlobalProvider = ({ children }) => {
     const newContact = {
       ...contact,
       id: uuid(),
+      thumbnail: contact.thumbnail || '/default-avatar.jpg'
     }
     const newContacts = [...contacts, newContact]
     setContacts(newContacts)

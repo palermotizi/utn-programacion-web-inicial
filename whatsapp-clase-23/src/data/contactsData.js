@@ -201,7 +201,7 @@ export const DATA_CONTACTOS = [
         {
           
           author: 'yo',
-          text: 'nNo hace falta, gracias :)',
+          text: 'No hace falta, gracias :)',
           estado: 'visto',
           day: 'lunes',
           hour: '9:27',

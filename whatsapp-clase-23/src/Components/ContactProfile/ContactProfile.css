@@ -36,7 +36,7 @@
 }
 
 .profile-content .profile-profile-pic {
-    width: 180px;
+    width: 170px;
     height: 180px;
     border-radius: 50%;
     overflow: hidden;
@@ -49,10 +49,9 @@
 }
 
 .profile-content h3 {
-    display: flex;
     color: white;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
