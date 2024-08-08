@@ -13,6 +13,7 @@ export const GlobalProvider = ({ children }) => {
   })
   const [searchTerm, setSearchTerm] = useState('')
   const navigate = useNavigate()
+  
 
   const handleDeleteContact = (id) => {
     const newContacts = contacts.filter(contact => contact.id !== id)

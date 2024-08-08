@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ContactProfile.css'
+
+
+
 import { useNavigate } from 'react-router-dom'
 const ContactProfile = ({ contact, onDelete }) => {
 
-const navigate = useNavigate()
+    const navigate = useNavigate()
+    const [isFavorite, setIsFavorite] = useState(false)
+
+
 const handleBackClick = () => {
     navigate(-1)
 }
- 
+
+const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite)
+}
 
 
   return (
@@ -42,14 +51,18 @@ const handleBackClick = () => {
             </div>
 
             <div className='profile-options'>
-                <button>
-                    <i className="bi bi-heart"> Añadir a favoritos </i>
+                <button onClick={handleFavoriteClick}>
+                    <i className={`bi ${isFavorite ? 'bi-heart-fill favorite' : 'bi-heart'}`}> 
+                    </i>
+                        {isFavorite ? ' Favoritos' : ' Añadir a favoritos'}
                 </button>
                 <button onClick={() => onDelete(contact.id)}>
-                    <i className="bi bi-trash"> Eliminar </i>
+                    <i className="bi bi-trash"> </i>
+                    Eliminar
                 </button>
                 <button>
-                    <i className="bi bi-hand-thumbs-down"> Reportar </i>
+                    <i className="bi bi-hand-thumbs-down"></i>
+                    Reportar 
                 </button>
             </div>
         </div>
