@@ -1,0 +1,82 @@
+.low-bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+}
+
+.low-bar .message-input {
+    display: flex;
+    background-color: #101B20;
+    color: #a2a0a0;
+    width: 100%;
+    height: 30px;
+    border-radius: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0, 10px;
+}
+
+.low-bar .message-input .emojis-message {
+    display: flex;
+    align-items: center;
+}
+
+.low-bar .message-input .message-field {
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    color: white;
+    outline: transparent;
+    flex-grow: 1;
+    width: 720px;
+    margin: 0, 10px;
+}
+
+.low-bar .message-input button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.low-bar .message-input i {
+    color: #a2a0a0;
+    padding: 8px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.low-bar .message-input .emojis-message .emojis {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.low-bar .message-input .form-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.low-bar .form-options .send {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 80px;
+    border: none;
+    background-color: rgb(34, 184, 69);
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    cursor: pointer;
+} 
+.low-bar .form-options .send i {
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
