@@ -33,7 +33,7 @@ const handleFavoriteClick = () => {
                 <div className="profile-profile-pic">
                     <img src={contact.thumbnail} className="profile-pic" alt="profile-pic" />
                 </div>
-                <h3 className="profile-contact-name">{contact.nombre}</h3>
+                <h3 className="profile-contact-name">{contact.nombre} {contact.apellido}</h3>
 
             <div className="profile-icons">
                 <button>

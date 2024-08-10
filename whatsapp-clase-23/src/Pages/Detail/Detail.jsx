@@ -37,7 +37,7 @@ const Detail = () => {
 
   return (
       <div className="whatsapp">
-        <TopBar contactName={contact.nombre} contactImage={contact.thumbnail} contactId={contact.id}/>
+        <TopBar contactName={`${contact.nombre || ''} ${contact.apellido || ''}`.trim()} contactImage={contact.thumbnail} contactId={contact.id}/> 
         <div className="background">
           <img src="/background.jpg" alt="background" className='background-img' />
         </div>

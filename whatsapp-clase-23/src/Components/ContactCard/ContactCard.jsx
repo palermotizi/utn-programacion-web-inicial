@@ -11,7 +11,7 @@ const ContactCard = ({ contact }) => {
             <img src={contact.thumbnail} alt="profile-pic" />
           </div>
           <div className="contact-info">
-            <h3 className='contact-name'>{contact.nombre}</h3>
+            <h3 className='contact-name'>{`${contact.nombre || ''} ${contact.apellido || ''}`.trim()}</h3>
             <span className='last-conection'>Última conexión: {contact.ultima_conexion}</span>
           </div>
         </div>
