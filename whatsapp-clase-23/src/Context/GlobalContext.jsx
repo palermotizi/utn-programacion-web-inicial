@@ -46,7 +46,7 @@ export const GlobalProvider = ({ children }) => {
 
   return (
     <GlobalContext.Provider value={{ contacts: filteredContacts, setSearchTerm, handleDeleteContact, handleCreateContact }}>
-      {children}
+  step2 
     </GlobalContext.Provider>
   )
 }
